@@ -1,11 +1,11 @@
-appVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vproapp
   labels:
     app: vproapp
 spec:
- S replicas: 1
+  replicas: 1
   selector:
     matchLabels:
       app: vproapp
